@@ -1,0 +1,197 @@
+body {
+  font-family: "Lato";
+  color: #424551;
+}
+
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+/*
+   transform: translate(20%, 20%);
+  transform: translateX(20px) translateY(0);
+  transform: scale(0.5);
+  transform: rotate(60deg); 
+  transform: skew(-10deg, -10deg);
+  perspective: 30px;
+  transform-origin: 0 0;
+  transform: rotate(10deg);
+  transform: rotate3d(2, 50, 50, 20deg); 
+*/
+
+/* ========== */
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  min-height: 100%;
+  padding: 50px;
+}
+
+/* ========== HEADER ========== */
+
+.header {
+  opacity: 0.5;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: yellowgreen;
+  z-index: 100;
+}
+.header__container {
+  padding: 15px;
+  justify-content: space-between;
+  flex-direction: row;
+  text-transform: uppercase;
+  background-color: rgb(33, 173, 124);
+}
+.header__lesson {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* ========== MAIN ========== */
+
+.main {
+  background-color: #eee;
+}
+
+.main__container {
+}
+
+.block {
+  padding: 30px;
+}
+
+.block__tranform:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+/* ======= */
+
+.block__tranform {
+  width: 200px;
+  height: 200px;
+  background-color: #7a956b;
+}
+
+/* ======= */
+
+.translate__block {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background: #368495;
+  margin-bottom: 15px;
+  transform: translate(15px, 15%);
+  /* transform: translateX(15px) translateY(15%); */
+}
+
+/* ======= */
+
+.scale__block {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background: #368495;
+  transform: scale(0.5);
+}
+
+/* ======= */
+
+.rotate__block {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background: #368495;
+  transform: rotate(60deg);
+}
+
+/* ======= */
+
+.skew__block {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background: #368495;
+  transform: skew(-10deg, -10deg);
+}
+
+/* ======= */
+
+.rotateX__block {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background: #368495;
+  transform: rotateX(45deg);
+}
+
+/* ======= */
+
+.rotateY {
+  background: rgba(102, 102, 102, 0.7);
+  perspective: 300px;
+  transform-style: preserve-3d;
+}
+
+/* ======= */
+
+.rotateY__block {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background: #368495;
+  transform: rotateX(45deg);
+}
+
+/* ======= */
+
+.rotate3d__block {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background: #368495;
+  transform-origin: 0 0;
+  transform: rotate3d(2, 50, 50, 20deg);
+}
+
+/* ======= */
+
+.matrix__block {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background: #368495;
+  transform: matrix(0.5, 0.1, 0.5, 0.5, 30, 30);
+}
+
+/* ========== FOOTER ========== */
+
+.footer {
+  background-color: rgb(60, 179, 187);
+}
+
+.footer__container {
+  padding: 15px;
+  justify-content: space-between;
+  flex-direction: row;
+  text-transform: uppercase;
+  background-color: rgb(33, 173, 124);
+}
+
+.footer__lesson {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
